@@ -1,0 +1,112 @@
+// configurando links
+a {
+  cursor: pointer;
+
+  text-decoration: none; // remover sublinhado
+
+  // estabelecendo tamanho da fonte , config da fonte definida no "_typography.scss":
+  // fonte: 'p3' | tela: 'desktop'
+  @include typeface-2(p3, desktop);
+
+  color: $white-normal;
+
+  transition: 0.3s ease; // tempo de transição para efeito hover
+
+  &:hover {
+    opacity: 0.7; // aplicar opacidade
+  }
+}
+
+// configurando cor acentuada p/ inputs (cor de caixinha marcada)
+input {
+  accent-color: $brand-color;
+}
+
+// configurando inputs
+input,
+select,
+option,
+textarea {
+  padding: 10px 12px;
+  background-color: #e8e8e8;
+  border: 0; // remover bordas
+  border-radius: 4px;
+  width: 100%; // sempre ocupar a largura total do 'pai'
+  color: $white-normal;
+  @include typeface-2(p3, desktop);
+
+  // remover bora de foco
+  &:focus {
+    outline: none;
+  }
+}
+
+select,
+option {
+  height: 48px;
+}
+
+// configurando botão principal
+.btn {
+  display: inline-block;
+  padding: 8px 24px;
+
+  // use cores desejada...
+  color: $white-normal;
+  background: $brand-color;
+
+  font-weight: bold !important;
+
+  border-radius: 4px;
+  border: 0;
+
+  @include typeface-2(p3, desktop);
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.7; // aplicar opacidade
+  }
+}
+
+.btn-google {
+  display: inline-block;
+  padding: 8px 24px;
+
+  // use cores desejada...
+  color: $white-normal;
+  background: $dark-10;
+
+  font-weight: bold !important;
+
+  border-radius: 4px;
+  border: 0;
+
+  @include typeface-2(p3, desktop);
+
+  cursor: pointer;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("../svg/icon-google.svg");
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 20%;
+
+    @include responsive(s) {
+      left: 32px !important;
+    }
+  }
+
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.7; // aplicar opacidade
+  }
+}
