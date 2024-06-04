@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <section className="container flex-center bg-arte">
-        <div className="grid-6">
+        <div className="grid-6 disappear">
           <img src={arte} />
         </div>
         <div className="grid-6 p-1">
