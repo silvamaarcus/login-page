@@ -32,7 +32,7 @@ textarea {
   border: 0; // remover bordas
   border-radius: 4px;
   width: 100%; // sempre ocupar a largura total do 'pai'
-  color: $white-normal;
+  color: $dark-10;
   @include typeface-2(p3, desktop);
 
   // remover bora de foco
