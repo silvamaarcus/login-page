@@ -530,15 +530,6 @@
   background-color: rgba(27, 105, 210, 0.2);
 }
 
-.bg-arte {
-  box-shadow: inset 0 0 #f3fff2, inset 50vw 0 #f3fff2;
-}
-@media screen and (max-width: 960px) {
-  .bg-arte {
-    box-shadow: inset 0 70vh #f3fff2, inset 0 0 #f3fff2;
-  }
-}
-
 .s-0 {
   margin: 0;
   padding: 0;
@@ -1573,8 +1564,20 @@ html {
 }
 
 body {
+  box-shadow: inset 0 0 #f3fff2, inset 50vw 0 #f3fff2;
+  height: 100vh;
   width: 100%;
   background-color: #ffffff;
+}
+@media screen and (max-width: 1440px) and (min-width: 1216px) {
+  body {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 960px) {
+  body {
+    box-shadow: none;
+  }
 }
 body::-webkit-scrollbar {
   padding-right: 4px;

@@ -5,7 +5,7 @@ import arte from "../../svg/image.svg";
 function Home() {
   return (
     <>
-      <section className="container flex-center bg-arte">
+      <section className="container flex-center">
         <div className="grid-6 disappear">
           <img src={arte} />
         </div>
