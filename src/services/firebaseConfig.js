@@ -7,7 +7,7 @@ const firebaseConfig = {
   projectId: "db-login-test-devmarcus",
   storageBucket: "db-login-test-devmarcus.appspot.com",
   messagingSenderId: "731642757541",
-  appId: "1:731642757541:web:04c959144c34215fc9a84c"
+  appId: "1:731642757541:web:04c959144c34215fc9a84c",
 };
 
 // Initialize Firebase
