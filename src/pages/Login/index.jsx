@@ -31,7 +31,7 @@ const Login = () => {
   // Caso o usuário NÃO esteja cadastrado...
   useEffect(() => {
     if (error) {
-      setLoginError("Erro ao fazer login: " + error.message);
+      setLoginError("Usuário ou senha inválidos!!!");
     }
   }, [error]);
 
@@ -39,7 +39,7 @@ const Login = () => {
     e.preventDefault();
     setLoginError(null); // Resetar mensagem de erro antes de tentar login
     signInWithEmailAndPassword(email, password).catch((error) => {
-      setLoginError("Erro ao fazer login: " + error.message);
+      setLoginError("Usuário ou senha inválidos!!!");
     });
   }
 
