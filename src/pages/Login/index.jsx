@@ -1,20 +1,18 @@
-import React from "react";
-
-import arte from "../../svg/image.svg";
-
 import { Link } from "react-router-dom";
+import arte from "../../assets/svg/image.svg";
 
-const Home = () => {
+const Login = () => {
   return (
     <>
       <section className="container flex-center">
         <div className="grid-6 disappear">
           <img src={arte} />
         </div>
+
         <div className="grid-6 p-1">
-          <form>
+          <div>
             <div className="titulo">
-              <p className="bold semi-bold color-black">Bem vindo de volta</p>
+              <p className="semi-bold color-black">Bem vindo de volta</p>
               <h5 className="bold">Faça login na sua conta</h5>
             </div>
 
@@ -36,28 +34,27 @@ const Home = () => {
                 </div>
               </div>
 
-              <a href="" className="color-primary bold">
+              <a href="#" className="color-primary bold">
                 Esqueceu sua senha?
               </a>
             </div>
+
             <div className="mt-7">
               <button className="btn w-100">Entrar na conta</button>
               <button className="mt-3 btn-google w-100">
                 Ou faça login com o Google
               </button>
             </div>
-
             <span className="mt-3 flex-center">
               <p className="semi-bold color-black">Não tem uma conta?</p>
               <Link to="/register" className="ml-1 color-primary semi-bold">
-                Cadastre-se
+                Acessar outra conta
               </Link>
             </span>
-          </form>
+          </div>
         </div>
       </section>
     </>
   );
 };
-
-export default Home;
+export default Login;
