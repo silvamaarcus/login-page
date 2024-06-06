@@ -2,7 +2,9 @@ import React from "react";
 
 import arte from "../../svg/image.svg";
 
-function Home() {
+import { Link } from "react-router-dom";
+
+const Home = () => {
   return (
     <>
       <section className="container flex-center">
@@ -44,16 +46,18 @@ function Home() {
                 Ou faça login com o Google
               </button>
             </div>
-            
+
             <span className="mt-3 flex-center">
               <p className="semi-bold color-black">Não tem uma conta?</p>
-              <a href="/" className="ml-1 color-primary semi-bold">Cadastre-se</a>
+              <Link to="/register" className="ml-1 color-primary semi-bold">
+                Cadastre-se
+              </Link>
             </span>
           </form>
         </div>
       </section>
     </>
   );
-}
+};
 
 export default Home;

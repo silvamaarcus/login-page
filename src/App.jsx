@@ -1,11 +1,9 @@
-import Home from "./pages/Home";
-import Register from "./pages/Register";
+import { AppRoutes } from "./routes/AppRoutes";
 
 function App() {
   return (
     <>
-      <Home />
-      <Register />
+      <AppRoutes />
     </>
   );
 }
