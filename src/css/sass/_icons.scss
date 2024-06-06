@@ -14,17 +14,10 @@
 }
 
 .icon-s {
-  max-width: 36px;
-  transition: 0.5s ease;
-
-  cursor: pointer;
+  max-width: 24px;
 
   @include responsive(s) {
-    max-width: 32px;
-  }
-
-  &:hover {
-    transform: translate(0, -4px, 0);
+    max-width: 20px;
   }
 }
 

@@ -1620,17 +1620,12 @@ img {
 }
 
 .icon-s {
-  max-width: 36px;
-  transition: 0.5s ease;
-  cursor: pointer;
+  max-width: 24px;
 }
 @media screen and (max-width: 960px) {
   .icon-s {
-    max-width: 32px;
+    max-width: 20px;
   }
-}
-.icon-s:hover {
-  transform: translate(0, -4px, 0);
 }
 
 .icon-l {
@@ -1739,10 +1734,10 @@ option {
   position: absolute;
   width: 24px;
   height: 24px;
-  background-image: url("../svg/icon-google.svg");
+  background-image: url("../assets/svg/icon-google.svg");
   transform: translate(-50%, -50%);
   top: 50%;
-  left: 20%;
+  left: 25%;
 }
 @media screen and (max-width: 960px) {
   .btn-google::after {

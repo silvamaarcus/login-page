@@ -30,8 +30,6 @@ const Login = () => {
       .catch((error) => {
         console.error("Erro ao fazer login: ", error);
       });
-    // signInWithEmailAndPassword(email, password);
-    // console.log("Usuario logado!!!");
   }
 
   return (
