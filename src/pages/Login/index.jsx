@@ -49,9 +49,9 @@ const Login = () => {
   const onSubmit = (data) => {
     setLoginError(null); // Resetando mensagem de erro.
 
-    //função signInWithEmailAndPassword: tenta autenticar o usuário usando o email e a senha fornecidos.
+    // função signInWithEmailAndPassword: tenta autenticar o usuário usando o email e a senha fornecidos.
     // data.email, data.password: fonecidos pelo usuario no input
-    signInWithEmailAndPassword(data.email, data.password); 
+    signInWithEmailAndPassword(data.email, data.password);
   };
 
   return (

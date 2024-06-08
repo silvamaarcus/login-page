@@ -1,8 +1,8 @@
-# Projeto de Página de Login com React e Firebase
+# Página de Login (React + Firebase)
 
 ## Descrição
 
-Este projeto demonstra a criação de uma página de login utilizando React e Vite. O objetivo principal é ilustrar o processo de criação de um usuário, salvando-o em um banco de dados Firebase, e posteriormente autenticá-lo. O projeto é composto por três páginas distintas: uma página de login, uma página de criação de novo usuário e uma página de sucesso que é exibida após o usuário efetuar login com sucesso.
+Este projeto full-stack demonstra a criação de uma página de login utilizando React e Vite. O objetivo principal é ilustrar o processo de criação de um usuário, salvando-o em um banco de dados Firebase, e posteriormente autenticá-lo. O projeto é composto por três páginas distintas: uma página de login, uma página de criação de novo usuário e uma página de sucesso que é exibida após o usuário efetuar login com sucesso.
 
 ## Estrutura do Projeto
 
