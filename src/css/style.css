@@ -530,6 +530,11 @@
   background-color: rgba(27, 105, 210, 0.2);
 }
 
+.bg-green {
+  box-shadow: inset 0 0 #f3fff2, inset 50vw 0 #f3fff2;
+  height: 100vh;
+}
+
 .s-0 {
   margin: 0;
   padding: 0;
@@ -1564,8 +1569,6 @@ html {
 }
 
 body {
-  box-shadow: inset 0 0 #f3fff2, inset 50vw 0 #f3fff2;
-  height: 100vh;
   width: 100%;
   background-color: #ffffff;
 }

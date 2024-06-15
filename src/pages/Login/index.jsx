@@ -55,81 +55,87 @@ const Login = () => {
   };
 
   return (
-    <section className="container flex-center">
-      <div className="grid-6 disappear">
-        <img src={arte} alt="Arte" />
-      </div>
-      <div className="grid-6 p-1">
-        <div>
-          <div className="titulo">
-            <p className="semi-bold color-black">Bem vindo de volta</p>
-            <h5 className="bold">Faça login na sua conta</h5>
-          </div>
-          <form className="formulario mt-5" onSubmit={handleSubmit(onSubmit)}>
-            <p className="bold semi-bold color-black">E-mail:</p>
-            <Controller
-              name="email"
-              control={control}
-              defaultValue=""
-              rules={{ required: "E-mail é obrigatório" }}
-              render={({ field }) => <input type="email" {...field} required />}
-            />
-            {errors.email && (
-              <p className="error-message color-red">{errors.email.message}</p>
-            )}
-
-            <p className="bold semi-bold color-black mt-2">Senha:</p>
-            <Controller
-              name="password"
-              control={control}
-              defaultValue=""
-              rules={{ required: "Senha é obrigatória" }}
-              render={({ field }) => (
-                <input type="password" {...field} required />
-              )}
-            />
-            {errors.password && (
-              <p className="error-message color-red">
-                {errors.password.message}
-              </p>
-            )}
-
-            <div className="flex-space mt-3">
-              <div className="flex-center">
-                <div>
-                  <input type="checkbox" name="checkbox" id="checkbox" />
-                </div>
-                <div className="ml-1">
-                  <p className="color-black w-100">Lembre de mim</p>
-                </div>
-              </div>
-              <a href="#" className="color-primary bold">
-                Esqueceu sua senha?
-              </a>
-            </div>
-
-            {loginError && (
-              <div className="error-message mt-3 color-red">{loginError}</div>
-            )}
-
-            <div className="mt-7">
-              <button type="submit" className="btn w-100" disabled={loading}>
-                {loading ? "Entrando..." : "Entrar na conta"}
-              </button>
-              <button className="mt-3 btn-google w-100">
-                Ou faça login com o Google
-              </button>
-            </div>
-          </form>
-
-          <span className="mt-3 flex-center">
-            <p className="semi-bold color-black">Não tem uma conta?</p>
-            <Link to="/register" className="ml-1 color-primary semi-bold">
-              Criar conta grátis!
-            </Link>
-          </span>
+    <section className="bg-green">
+      <section className="container flex-center">
+        <div className="grid-6 disappear">
+          <img src={arte} alt="Arte" />
         </div>
-      </div>
+        <div className="grid-6 p-1">
+          <div>
+            <div className="titulo">
+              <p className="semi-bold color-black">Bem vindo de volta</p>
+              <h5 className="bold">Faça login na sua conta</h5>
+            </div>
+            <form className="formulario mt-5" onSubmit={handleSubmit(onSubmit)}>
+              <p className="bold semi-bold color-black">E-mail:</p>
+              <Controller
+                name="email"
+                control={control}
+                defaultValue=""
+                rules={{ required: "E-mail é obrigatório" }}
+                render={({ field }) => (
+                  <input type="email" {...field} required />
+                )}
+              />
+              {errors.email && (
+                <p className="error-message color-red">
+                  {errors.email.message}
+                </p>
+              )}
+
+              <p className="bold semi-bold color-black mt-2">Senha:</p>
+              <Controller
+                name="password"
+                control={control}
+                defaultValue=""
+                rules={{ required: "Senha é obrigatória" }}
+                render={({ field }) => (
+                  <input type="password" {...field} required />
+                )}
+              />
+              {errors.password && (
+                <p className="error-message color-red">
+                  {errors.password.message}
+                </p>
+              )}
+
+              <div className="flex-space mt-3">
+                <div className="flex-center">
+                  <div>
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                  </div>
+                  <div className="ml-1">
+                    <p className="color-black w-100">Lembre de mim</p>
+                  </div>
+                </div>
+                <a href="#" className="color-primary bold">
+                  Esqueceu sua senha?
+                </a>
+              </div>
+
+              {loginError && (
+                <div className="error-message mt-3 color-red">{loginError}</div>
+              )}
+
+              <div className="mt-7">
+                <button type="submit" className="btn w-100" disabled={loading}>
+                  {loading ? "Entrando..." : "Entrar na conta"}
+                </button>
+                <button className="mt-3 btn-google w-100">
+                  Ou faça login com o Google
+                </button>
+              </div>
+            </form>
+
+            <span className="mt-3 flex-center">
+              <p className="semi-bold color-black">Não tem uma conta?</p>
+              <Link to="/register" className="ml-1 color-primary semi-bold">
+                Criar conta grátis!
+              </Link>
+            </span>
+          </div>
+        </div>
+      </section>
     </section>
   );
 };
